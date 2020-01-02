@@ -133,7 +133,7 @@ public class Tickets {
     }
 
     public void printSpaces(String str1, String str2){
-        int space = 50 - str1.length();
+        int space = 30 - str1.length();
         System.out.print(str1);
         for(int i=0 ; i < space ; i++){
             System.out.print(" ");
