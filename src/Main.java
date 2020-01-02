@@ -61,7 +61,7 @@ public class Main {
     public void searchTicket(String searchTerm, String value){
         Tickets ob = new Tickets();
         if(ob.checkTerm(searchTerm)){
-
+            ob.returnSearchResult(searchTerm,value);
         }else{
             System.out.println("Enter a valid search term.....");
         }
