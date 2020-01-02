@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="36733cce-f96b-49a1-812d-43ce3b10f27d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JsonStore/organizations.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JsonStore/tickets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JsonStore/tickets1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JsonStore/users.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Organization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tickets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JuniorHack2019.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JuniorHack2019.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="F:\Projects\Java Projects\JuniorHack2019\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VqTYaxOCb4DxLLt4DU7DXz4Ih0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/JsonStore" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Projects\Java Projects\JuniorHack2019\JsonStore" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="JuniorHack2019" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="336" y="0" key="CommitChangelistDialog2" timestamp="1578000477424">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="336" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1578000477424" />
+    <state x="389" y="126" key="FileChooserDialogImpl" timestamp="1577988867833">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="389" y="126" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1577988867833" />
+    <state width="1345" height="192" key="GridCell.Tab.0.bottom" timestamp="1578000001511">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1578000001511" />
+    <state width="1345" height="192" key="GridCell.Tab.0.center" timestamp="1578000001511">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1578000001511" />
+    <state width="1345" height="192" key="GridCell.Tab.0.left" timestamp="1578000001511">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1578000001511" />
+    <state width="1345" height="192" key="GridCell.Tab.0.right" timestamp="1578000001511">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1345" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1578000001511" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1577988870095">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1577988870095" />
+    <state x="275" y="118" key="Vcs.Push.Dialog.v2" timestamp="1577980006365">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="118" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1577980006365" />
+  </component>
+</project>
