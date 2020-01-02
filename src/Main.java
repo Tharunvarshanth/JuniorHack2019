@@ -111,19 +111,19 @@ public class Main {
 
         System.out.println("============================================================");
 
-        System.out.println("Search Users View ");
+        System.out.println("Search Users with\n");
         System.out.println("id\nurl\nexternal_id\nname\nalias\ncreated_at\nactive\nverified\nshared\ntimezone"
                 +"last_login_at\nemail\nphone\nsignature\norganization_id\ntags\nsuspended\nrole");
 
         System.out.println("============================================================");
 
-        System.out.println("\nSearch Tickets View ");
+        System.out.println("Search Tickets with\n");
         System.out.println("_id\nurl\nexternal_id\ncreated_at\ntype\nnsubject\nndescription\nnpriority\nstatus\n"
                 +"submitter_id\nassignee_id\norganization_id\ntags\nhas_incidents\ndue_at\nvia ");
 
         System.out.println("============================================================");
 
-        System.out.println("\nSearch Organizations View ");
+        System.out.println("Search Organizations with\n");
         System.out.println("_id\nurl\nexternal_id\nname\ndomain_names\ncreated_at\ndetails\nshared_tickets\ntags");
 
         System.out.println("============================================================");

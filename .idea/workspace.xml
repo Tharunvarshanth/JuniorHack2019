@@ -3,10 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="36733cce-f96b-49a1-812d-43ce3b10f27d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JuniorHack2019/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JuniorHack2019/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JsonStore/tickets1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JuniorHack2019/Organization.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JuniorHack2019/Organization.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JuniorHack2019/Tickets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JuniorHack2019/Tickets.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JuniorHack2019/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JuniorHack2019/Users.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Organization.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tickets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tickets.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users.java" afterDir="false" />
     </list>
@@ -85,40 +87,41 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="users and organizations searching methods are completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="users and organizations searching methods are completed" />
+    <MESSAGE value="tickets and organizations searching methods are completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="tickets and organizations searching methods are completed" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="336" y="0" key="CommitChangelistDialog2" timestamp="1578000529303">
+    <state x="336" y="0" key="CommitChangelistDialog2" timestamp="1578003295018">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="336" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1578000529303" />
+    <state x="336" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1578003295018" />
     <state x="389" y="126" key="FileChooserDialogImpl" timestamp="1577988867833">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="389" y="126" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1577988867833" />
-    <state width="1345" height="192" key="GridCell.Tab.0.bottom" timestamp="1578003227518">
+    <state width="1345" height="192" key="GridCell.Tab.0.bottom" timestamp="1578005565071">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1578003227518" />
-    <state width="1345" height="192" key="GridCell.Tab.0.center" timestamp="1578003227517">
+    <state width="1345" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1578005565071" />
+    <state width="1345" height="192" key="GridCell.Tab.0.center" timestamp="1578005565071">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1578003227517" />
-    <state width="1345" height="192" key="GridCell.Tab.0.left" timestamp="1578003227517">
+    <state width="1345" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1578005565071" />
+    <state width="1345" height="192" key="GridCell.Tab.0.left" timestamp="1578005565070">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1578003227517" />
-    <state width="1345" height="192" key="GridCell.Tab.0.right" timestamp="1578003227517">
+    <state width="1345" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1578005565070" />
+    <state width="1345" height="192" key="GridCell.Tab.0.right" timestamp="1578005565071">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1345" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1578003227517" />
+    <state width="1345" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1578005565071" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1577988870095">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1577988870095" />
-    <state x="275" y="118" key="Vcs.Push.Dialog.v2" timestamp="1578000536278">
+    <state x="275" y="118" key="Vcs.Push.Dialog.v2" timestamp="1578003301218">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="118" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1578000536278" />
+    <state x="275" y="118" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1578003301218" />
   </component>
 </project>

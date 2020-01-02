@@ -57,15 +57,23 @@ public class Organization {
                 this.domName = jObj.get("domain_names").toString();
                 this.details = jObj.get("details").toString();
 
-                System.out.println(orgName);
-                System.out.println(domName);
-                System.out.println(details);
-
+                printSpaces("Organization Name ",orgName);
+                printSpaces("Domain Name ",domName);
+                printSpaces("Details ",details);
                 reader.close();
             }
         }catch (Exception e){
             System.out.println(e);
         }
+    }
+
+    public void printSpaces(String str1, String str2){
+        int space = 75 - str1.length();
+        System.out.print(str1);
+        for(int i=0 ; i < space ; i++){
+            System.out.print(" ");
+        }
+        System.out.println(str2);
     }
 
 }

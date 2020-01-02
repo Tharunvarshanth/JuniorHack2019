@@ -51,13 +51,6 @@ public class Tickets {
                 this.submitterId=jObj.get("submitter_id").toString();
                 this.orgId=jObj.get("organization_id").toString();
                 reader.close();
-
-
-
-
-                System.out.println(orgId);
-                System.out.println(assigneeId);
-                System.out.println(submitterId);
                 search2(this.assigneeId);
                 search3(this.submitterId);
                 search4(this.orgId);
@@ -84,7 +77,8 @@ public class Tickets {
                 }
             }
             this.assigneeName=jObj1.get("name").toString();
-            System.out.println(assigneeName);
+            printSpaces("Assignee Name",assigneeName);
+            reader2.close();
         }catch (Exception e){
             System.out.println(e);
         }
@@ -107,7 +101,8 @@ public class Tickets {
                 }
             }
             this.submitterName=jObj1.get("name").toString();
-            System.out.println(submitterName);
+            printSpaces("Submitter Name",submitterName);
+            reader2.close();
         }catch (Exception e){
             System.out.println(e);
         }
@@ -130,9 +125,19 @@ public class Tickets {
                 }
             }
             this.organizationName=jObj1.get("name").toString();
-            System.out.println(organizationName);
+            printSpaces("Organization Name",organizationName);
+            reader2.close();
         }catch (Exception e){
             System.out.println(e);
         }
+    }
+
+    public void printSpaces(String str1, String str2){
+        int space = 50 - str1.length();
+        System.out.print(str1);
+        for(int i=0 ; i < space ; i++){
+            System.out.print(" ");
+        }
+        System.out.println(str2);
     }
 }

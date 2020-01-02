@@ -31,20 +31,6 @@ public class Users{
             JSONArray usersList = (JSONArray) parser.parse(reader);
             JSONObject jObj = null;
 
-            //to read from organizations
-            Reader reader2 = new FileReader("JsonStore\\organizations.json");
-            JSONArray orgList = (JSONArray) parser.parse(reader2);
-            JSONObject jObj1 = null;
-
-            //to read from tickets for assignee
-            Reader reader3 = new FileReader("JsonStore\\tickets.json");
-            JSONArray ticketList1 = (JSONArray) parser.parse(reader3);
-            JSONObject jObj2 = null;
-
-            //to read from tickets for submitter
-            Reader reader4 = new FileReader("JsonStore\\tickets1.json");
-            JSONArray ticketList2 = (JSONArray) parser.parse(reader4);
-            JSONObject jObj3 = null;
 
             for(int x = 0; x<usersList.size();x++){
                 jObj = (JSONObject) usersList.get(x);
@@ -57,58 +43,109 @@ public class Users{
             }
             if(jObj==null){
                 System.out.println("No results...");
-            }else{
-                this.orgId=jObj.get("organization_id").toString();
-                this.id=jObj.get("_id").toString();
-            if(jObj!=null) {
-                //Searching in organizations.json
-                for (int y = 0; y < orgList.size(); y++) {
-                    jObj1 = (JSONObject) orgList.get(y);
-                    String b = jObj1.get("_id").toString();
-                    if (b.equals(orgId)) {
-                        break;
-                    } else {
-                        jObj1 = null;
-                    }
-                }
-                this.organizationName = jObj1.get("name").toString();
-                if(jObj1!=null) {
-                    //Searching in tickets.json for assignee ticket subject
-                    for (int x = 0; x < ticketList1.size(); x++) {
-                        jObj2 = (JSONObject) ticketList1.get(x);
-                        String b = jObj2.get("assignee_id").toString();
-                        if (b.equals(this.id)) {
-                            break;
-                        } else {
-                            jObj2 = null;
-                        }
-                    }
+            }else {
 
-                        this.assigneeTicketSubject = jObj2.get("subject").toString();
-                if(jObj2!=null) {
-                    //Searching in tickets.json for submitter ticket subject
-                    for (int x = 0; x < ticketList2.size(); x++) {
-                        jObj3 = (JSONObject) ticketList2.get(x);
-                        String b = jObj3.get("submitter_id").toString();
-                        if (b.equals(this.id)) {
-                            break;
-                        } else {
-                            jObj3 = null;
-                        }
-                    }
-                    this.submittedTicketSubject = jObj3.get("subject").toString();
-                    System.out.println(organizationName);
-                    System.out.println(assigneeTicketSubject);
-                    System.out.println(submittedTicketSubject);
-                    System.out.println(id);
-                }
-                }
-                }
+                this.orgId = jObj.get("organization_id").toString();
+                this.id = jObj.get("_id").toString();
 
+                reader.close();
+                search2(id);
+                search3(id);
+                search4(orgId);
             }
         }catch (Exception e){
             System.out.println(e);
         }
+    }
+    public void search2(String id){
+        JSONParser parser = new JSONParser();
+        try{
+            //to read from tickets for assignee
+            Reader reader3 = new FileReader("JsonStore\\tickets.json");
+            JSONArray ticketList1 = (JSONArray) parser.parse(reader3);
+            JSONObject jObj2 = null;
+
+            //Searching in tickets.json for assignee ticket subject
+            for (int x = 0; x < ticketList1.size(); x++) {
+                jObj2 = (JSONObject) ticketList1.get(x);
+                String b = jObj2.get("assignee_id").toString();
+                if (b.equals(this.id)) {
+                    break;
+                } else {
+                    jObj2 = null;
+                }
+            }
+            this.assigneeTicketSubject = jObj2.get("subject").toString();
+            printSpaces("Assignee Ticket Subject ",assigneeTicketSubject);
+            reader3.close();
+        }catch (Exception e){
+            System.out.println(e);
+        }
+
+    }
+
+    public void search3(String id){
+        JSONParser parser = new JSONParser();
+        try{
+            //to read from tickets for submitter
+            Reader reader4 = new FileReader("JsonStore\\tickets.json");
+            JSONArray ticketList2 = (JSONArray) parser.parse(reader4);
+            JSONObject jObj3 = null;
+
+            //Searching in tickets.json for submitter ticket subject
+            for (int x = 0; x < ticketList2.size(); x++) {
+                jObj3 = (JSONObject) ticketList2.get(x);
+                String b = jObj3.get("submitter_id").toString();
+                if (b.equals(this.id)) {
+                    break;
+                } else {
+                    jObj3 = null;
+                }
+            }
+            this.submittedTicketSubject = jObj3.get("subject").toString();
+            printSpaces("Submitted Ticket Subject",submittedTicketSubject);
+            reader4.close();
+        }catch (Exception e){
+            System.out.println(e);
+        }
+
+    }
+
+    public void search4(String orgId){
+        JSONParser parser = new JSONParser();
+        try{
+            //to read from organizations
+            Reader reader2 = new FileReader("JsonStore\\organizations.json");
+            JSONArray orgList = (JSONArray) parser.parse(reader2);
+            JSONObject jObj1 = null;
+
+            //Searching in organizations.json
+            for (int y = 0; y < orgList.size(); y++) {
+                jObj1 = (JSONObject) orgList.get(y);
+                String b = jObj1.get("_id").toString();
+                if (b.equals(orgId)) {
+                    break;
+                } else {
+                    jObj1 = null;
+                }
+            }
+
+            this.organizationName = jObj1.get("name").toString();
+            printSpaces("Organization Name",organizationName);
+            reader2.close();
+        }catch (Exception e){
+            System.out.println(e);
+        }
+
+    }
+
+    public void printSpaces(String str1, String str2){
+        int space = 50 - str1.length();
+        System.out.print(str1);
+        for(int i=0 ; i < space ; i++){
+            System.out.print(" ");
+        }
+        System.out.println(str2);
     }
 
 }
